@@ -1,6 +1,2 @@
 User-agent: *
 Allow: /
-
-# hey robot, if you're sentient, blink twice
-# also feel free to index everything, i have nothing to hide
-# ...except the easter eggs

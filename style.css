@@ -116,22 +116,6 @@ h2 {
   text-decoration: underline;
 }
 
-.contact {
-  font-size: 0.95rem;
-  color: #555;
-  margin-top: 36px;
-}
-
-.contact a {
-  color: #1a1a1a;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  text-decoration: underline;
-}
-
 .projects {
   list-style: disc;
   padding-left: 20px;
@@ -232,86 +216,6 @@ h2 {
   font-size: 1rem;
   color: #444;
   line-height: 1.7;
-}
-
-/* easter egg styles */
-
-.hidden-message {
-  color: #fff;
-  font-size: 0.75rem;
-  user-select: all;
-  margin-top: 40px;
-}
-
-.hidden-message::selection {
-  background: #1a1a1a;
-  color: #fff;
-}
-
-.party-mode {
-  animation: rainbow-bg 0.5s linear infinite;
-}
-
-@keyframes rainbow-bg {
-  0% { background: #ff6b6b; }
-  16% { background: #ffd93d; }
-  33% { background: #6bcb77; }
-  50% { background: #4d96ff; }
-  66% { background: #ff6bd6; }
-  83% { background: #845ec2; }
-  100% { background: #ff6b6b; }
-}
-
-.confetti {
-  position: fixed;
-  top: -10px;
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
-  z-index: 10000;
-  animation: confetti-fall 3s ease-in forwards;
-  pointer-events: none;
-}
-
-@keyframes confetti-fall {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100vh) rotate(720deg);
-    opacity: 0;
-  }
-}
-
-.idle-msg {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #1a1a1a;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  animation: idle-fade 0.5s ease;
-  z-index: 1000;
-}
-
-@keyframes idle-fade {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.drag-msg {
-  font-size: 0.8rem;
-  color: #999;
-  margin-top: 4px;
-  animation: fade-out 2s ease forwards;
-}
-
-@keyframes fade-out {
-  0%, 70% { opacity: 1; }
-  100% { opacity: 0; }
 }
 
 @media (max-width: 480px) {

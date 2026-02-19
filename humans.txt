@@ -1,18 +1,12 @@
 /* the humans responsible for this site */
 
 /* TEAM */
-Developer: Dylic
-Contact: dylicdev@gmail.com
+Developer: Gedaliah
 From: the internet
 
 /* THANKS */
 Coffee, late nights, and the occasional mass of broken CSS.
 
 /* SITE */
-Standards: HTML5, CSS3, vanilla JS
+Standards: HTML5, CSS3
 Software: a text editor and vibes
-
-/* SECRET */
-If you found this file, you're clearly someone who pokes around.
-I respect that. Here's a high five: 🖐️
-There's more to find if you keep looking.
