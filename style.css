@@ -25,18 +25,19 @@ h1 {
   margin-bottom: 20px;
 }
 
-.socials {
+.name-row {
   display: flex;
-  gap: 16px;
-  margin-bottom: 28px;
+  align-items: center;
+  gap: 14px;
 }
 
-.socials a {
+.github-link {
   color: #1a1a1a;
   transition: opacity 0.15s ease;
+  display: inline-flex;
 }
 
-.socials a:hover {
+.github-link:hover {
   opacity: 0.6;
 }
 
