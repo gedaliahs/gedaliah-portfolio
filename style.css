@@ -218,6 +218,17 @@ h2 {
   line-height: 1.7;
 }
 
+.skills-heading {
+  margin-top: 36px;
+  margin-bottom: 8px;
+}
+
+.skills {
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.7;
+}
+
 @media (max-width: 480px) {
   main {
     margin: 0;
@@ -227,4 +238,5 @@ h2 {
   h1 {
     font-size: 2.5rem;
   }
+
 }
