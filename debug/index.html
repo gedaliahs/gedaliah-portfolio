@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>error</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    body { font-family: 'Courier New', monospace; background: #0a0a0a; color: #ff3333; font-size: 13px; padding: 20px; line-height: 1.7; }
+    .dim { color: #661111; }
+    .white { color: #ccc; }
+    .green { color: #33ff33; }
+    .yellow { color: #ffd93d; }
+    .stack { color: #ff6666; margin: 16px 0; }
+    .sep { color: #333; }
+    pre { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+<pre>
+<span class="white">DYLIC.DEV CRASH REPORT</span>
+<span class="sep">============================================================</span>
+<span class="dim">timestamp:</span> <span class="white" id="ts"></span>
+<span class="dim">env:</span>       <span class="white">production (oops)</span>
+<span class="dim">node:</span>      <span class="white">v20.11.0</span>
+<span class="dim">pid:</span>       <span class="white">31337</span>
+<span class="sep">------------------------------------------------------------</span>
+
+<span class="white">UNHANDLED ERROR:</span>
+
+Error: cannot read property 'talent' of undefined
+    at Developer.hire (/src/career.js:42:16)
+    at FreelanceLoop.grind (/src/hustle.js:99:3)
+    at CoffeeEngine.brew (/lib/caffeine.js:1:1)
+    at sleep.skip (/src/lifestyle.js:404:0)
+    at Object.&lt;anonymous&gt; (/src/index.js:1:1)
+
+<span class="dim">caused by:</span> <span class="yellow">too many side projects, not enough sleep</span>
+
+<span class="sep">------------------------------------------------------------</span>
+<span class="dim">SYSTEM STATE AT CRASH:</span>
+
+  tabs_open:          <span class="white">47</span>
+  stackoverflow_visits: <span class="white">12 (today)</span>
+  coffee_level:       <span class="white">critical</span>
+  impostor_syndrome:  <span class="white">active</span>
+  git_commits_today:  <span class="white">0 (it's a refactor day)</span>
+  music:              <span class="white">lofi hip hop radio - beats to relax/study to</span>
+
+<span class="sep">------------------------------------------------------------</span>
+<span class="dim">RECOVERY SUGGESTIONS:</span>
+
+  1. close some tabs (you won't)
+  2. take a break (you also won't)
+  3. email <span class="green">dylicdev@gmail.com</span> and tell me you found this
+  4. go back to <a href="/" style="color:#33ff33">dylic.dev</a>
+
+<span class="sep">------------------------------------------------------------</span>
+<span class="dim">this isn't a real crash. the site is fine.</span>
+<span class="dim">but if you got here, you're clearly poking around.</span>
+<span class="dim">respect.</span>
+
+<span class="dim">try: /ssh, /source, /api, /changelog</span>
+</pre>
+<script>document.getElementById('ts').textContent = new Date().toISOString();</script>
+</body>
+</html>

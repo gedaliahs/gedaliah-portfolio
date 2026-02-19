@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>api response</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    body { font-family: 'Courier New', monospace; background: #1e1e1e; color: #d4d4d4; font-size: 13px; padding: 20px; line-height: 1.6; }
+    .str { color: #ce9178; }
+    .key { color: #9cdcfe; }
+    .num { color: #b5cea8; }
+    .bool { color: #569cd6; }
+    .null { color: #569cd6; }
+    .brace { color: #ffd700; }
+    .header { color: #888; margin-bottom: 16px; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="header">GET /api HTTP/1.1 — 200 OK — application/json</div>
+<pre><span class="brace">{</span>
+  <span class="key">"status"</span>: <span class="str">"operational"</span>,
+  <span class="key">"site"</span>: <span class="str">"dylic.dev"</span>,
+  <span class="key">"version"</span>: <span class="str">"3.1.4"</span>,
+  <span class="key">"uptime"</span>: <span class="str">"since you got here"</span>,
+  <span class="key">"coffee_consumed"</span>: <span class="num">847</span>,
+  <span class="key">"bugs_squashed"</span>: <span class="num">412</span>,
+  <span class="key">"bugs_introduced"</span>: <span class="num">413</span>,
+  <span class="key">"easter_eggs_found_by_you"</span>: <span class="num">1</span>,
+  <span class="key">"easter_eggs_total"</span>: <span class="str">"nice try"</span>,
+  <span class="key">"is_hiring"</span>: <span class="bool">true</span>,
+  <span class="key">"contact"</span>: <span class="str">"dylicdev@gmail.com"</span>,
+  <span class="key">"message"</span>: <span class="str">"you found the api. it doesn't do anything. but you found it."</span>,
+  <span class="key">"endpoints"</span>: <span class="brace">[</span>
+    <span class="str">"/api"</span>,
+    <span class="str">"/api/status"</span>,
+    <span class="str">"/api/hire"</span>,
+    <span class="str">"/api/meaning-of-life"</span>
+  <span class="brace">]</span>,
+  <span class="key">"_comment"</span>: <span class="str">"this is a static html page pretending to be json. you know that right?"</span>,
+  <span class="key">"_hidden"</span>: <span class="str">"try /changelog"</span>
+<span class="brace">}</span></pre>
+</body>
+</html>

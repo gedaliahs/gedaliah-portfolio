@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>git log</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    body { font-family: 'Courier New', monospace; background: #0a0a0a; color: #d4d4d4; font-size: 13px; padding: 20px; line-height: 1.5; }
+    .hash { color: #ffd93d; }
+    .author { color: #33ff33; }
+    .date { color: #888; }
+    .msg { color: #d4d4d4; }
+    .sep { color: #333; }
+    .dim { color: #555; }
+    .branch { color: #ff6b6b; }
+    pre { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+<pre>
+<span class="dim">$ git log --oneline --all</span>
+
+<span class="hash">a1b2c3d</span> <span class="branch">(HEAD -> main)</span> <span class="msg">remove debug endpoint before someone finds it</span>
+<span class="hash">e4f5g6h</span> <span class="msg">fix: accidentally exposed /ssh to the internet</span>
+<span class="hash">i7j8k9l</span> <span class="msg">add 3 more easter eggs (total: lost count)</span>
+<span class="hash">m0n1o2p</span> <span class="msg">refactor: move admin creds out of source code</span>
+<span class="hash">q3r4s5t</span> <span class="msg">revert "refactor: move admin creds out of source code"</span>
+<span class="hash">u6v7w8x</span> <span class="msg">ok fine the creds stay in the source code</span>
+<span class="hash">y9z0a1b</span> <span class="msg">add fake terminal because why not</span>
+<span class="hash">c2d3e4f</span> <span class="msg">3am commit. don't ask what this does</span>
+<span class="hash">g5h6i7j</span> <span class="msg">fix: the site was upside down for 2 hours and nobody noticed</span>
+<span class="hash">k8l9m0n</span> <span class="msg">feat: add /tea because RFC 2324 is important</span>
+<span class="hash">o1p2q3r</span> <span class="msg">fix: remove console.log("here") x47</span>
+<span class="hash">s4t5u6v</span> <span class="msg">add more hidden pages</span>
+<span class="hash">w7x8y9z</span> <span class="msg">this is technically a portfolio site</span>
+<span class="hash">a0b1c2d</span> <span class="msg">initial commit: "this will be a simple portfolio"</span>
+
+<span class="sep">------------------------------------------------------------</span>
+
+<span class="dim">$ git log --format=fuller -1</span>
+
+<span class="hash">commit a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8</span>
+Author:     <span class="author">Dylic &lt;dylicdev@gmail.com&gt;</span>
+AuthorDate: <span class="date" id="date"></span>
+Commit:     <span class="author">Dylic &lt;dylicdev@gmail.com&gt;</span>
+CommitDate: <span class="date" id="date2"></span>
+
+    <span class="msg">remove debug endpoint before someone finds it</span>
+
+    <span class="dim">spoiler: they found it</span>
+    <span class="dim">spoiler: they also found this page</span>
+    <span class="dim">spoiler: hi</span>
+
+<span class="sep">------------------------------------------------------------</span>
+
+<span class="dim">$ git diff --stat</span>
+
+ <span class="author">src/secrets.js</span>     |  <span class="hash">42</span> <span class="author">+++++++++</span><span class="branch">-----------</span>
+ <span class="author">src/easter-eggs.js</span> | <span class="hash">108</span> <span class="author">++++++++++++++++++++++++++</span>
+ <span class="author">src/sleep.js</span>       |   <span class="hash">0</span>
+ <span class="msg">3 files changed, 134 insertions(+), 16 deletions(-)</span>
+
+<span class="sep">------------------------------------------------------------</span>
+
+<span class="dim">if you're reading fake git logs on a stranger's portfolio site</span>
+<span class="dim">at this hour, we should probably be friends.</span>
+<span class="dim"><a href="mailto:dylicdev@gmail.com" style="color:#555">dylicdev@gmail.com</a></span>
+
+<span class="dim"><a href="/" style="color:#333">cd ~</a></span>
+</pre>
+<script>
+  var d = new Date().toUTCString();
+  document.getElementById('date').textContent = d;
+  document.getElementById('date2').textContent = d;
+</script>
+</body>
+</html>
