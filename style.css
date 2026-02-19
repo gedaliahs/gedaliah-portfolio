@@ -33,12 +33,16 @@ h1 {
 
 .github-link {
   color: #1a1a1a;
-  transition: opacity 0.15s ease;
   display: inline-flex;
 }
 
+.github-link:visited {
+  color: #1a1a1a;
+}
+
 .github-link:hover {
-  opacity: 0.6;
+  color: #1a1a1a;
+  opacity: 1;
 }
 
 .status {
